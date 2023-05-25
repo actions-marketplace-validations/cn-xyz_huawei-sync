@@ -15,4 +15,4 @@ echo "## Login dest TRANSPORT ##################"
 set -x
 skopeo login -u ${DOCKER_USER} -p ${DOCKER_PASS} ${HUB_LOGIN_URL} --tls-verify=false
 
-docker-sync
+huawei-sync
