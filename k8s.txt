@@ -1,0 +1,16 @@
+registry.k8s.io/kube-apiserver
+registry.k8s.io/kube-controller-manager
+registry.k8s.io/kube-scheduler
+registry.k8s.io/kube-proxy
+registry.k8s.io/pause
+registry.k8s.io/etcd
+registry.k8s.io/coredns/coredns
+registry.k8s.io/ingress-nginx/controller
+registry.k8s.io/ingress-nginx/kube-webhook-certgen
+docker.io/calico/typha
+docker.io/calico/cni
+docker.io/calico/node
+docker.io/calico/kube-controllers
+docker.io/calico/ctl
+docker.io/flannel/flannel
+docker.io/flannel/flannel-cni-plugin
