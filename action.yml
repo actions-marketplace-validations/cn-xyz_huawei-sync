@@ -1,0 +1,26 @@
+name: 'Huawei Images Sync Tool'
+description: 'Huawei Images Sync Tool'
+author: 'admin <admin@china.cn>'
+inputs:
+  REPO_URL:
+    description: 'github'
+    default: 'image-sync'
+  REMOTE_URL:
+    description: 'github'
+    default: 'image-sync'
+  HUB_LOGIN_URL:
+    description: 'github'
+    default: 'image-sync'
+  DOCKER_USER:
+    description: 'github'
+    default: 'image-sync'
+  DOCKER_PASS:
+    description: 'github'
+    default: 'image-sync'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  color: 'blue'
+  icon: 'repeat'
