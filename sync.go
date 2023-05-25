@@ -183,6 +183,11 @@ func copyImage(srcRepo, destHub, destName, tag string) error {
 		return fmt.Errorf("failed to execute pushCmd: %s", err)
 	}
 
+	err = pushCmd.Wait()
+	if err != nil {
+		return fmt.Errorf("failed to wait for pushCmd: %s", err)
+	}
+
 	return nil
 }
 
