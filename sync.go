@@ -207,6 +207,10 @@ func getDestName(repoURL string) string {
 			begin := strings.ReplaceAll(repoURL, "gcr.io/", "")
 			last := strings.ReplaceAll(begin, "-", "_")
 			destName = strings.ReplaceAll(last, "/", "_")
+		} else if strings.Contains(repoURL, "docker.io") {
+			begin := strings.ReplaceAll(repoURL, "docker.io/", "")
+			last := strings.ReplaceAll(begin, "-", "_")
+			destName = strings.ReplaceAll(last, "/", "_")
 		}
 	}
 
